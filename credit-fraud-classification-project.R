@@ -178,7 +178,7 @@ cat("Logistic Regression - ROC:", logistic_roc$auc, "Sensitivity:", logistic_sen
 
 
 
-# Step 5: GBM (Gradient Boosting Machine)
+# Step 4: GBM (Gradient Boosting Machine)
 # Train GBM Model
 set.seed(123)
 gbm_model <- train(Class ~ ., data = train_data_balanced, 
@@ -196,7 +196,7 @@ gbm_sensitivity <- sensitivity(predict(gbm_model, test_data), test_data$Class)
 cat("GBM Model - ROC:", gbm_roc$auc, "Sensitivity:", gbm_sensitivity, "\n")
 
 
-# Step 6: Neural Network
+# Step 5: Neural Network
 # Train Neural Network Model
 set.seed(123)
 nnet_model <- train(Class ~ ., data = train_data_balanced, 
@@ -221,11 +221,8 @@ sink("model_output-fraudClassification-project.txt")
 # Step 7: Compare Model Results
 # Compare ROC and Sensitivity
 results <- data.frame(
-  #Model = c("Logistic Regression", "KNN", "GBM", "Neural Network"),
   Model = c("Logistic Regression", "GBM", "Neural Network"),
-  #ROC = c(logistic_roc$auc, knn_roc$auc, gbm_roc$auc, nnet_roc$auc),
   ROC = c(logistic_roc$auc, gbm_roc$auc, nnet_roc$auc),
-  #Sensitivity = c(logistic_sensitivity, knn_sensitivity, gbm_sensitivity, nnet_sensitivity)
   Sensitivity = c(logistic_sensitivity, gbm_sensitivity, nnet_sensitivity)
 )
 
@@ -267,7 +264,7 @@ cat("Neural Network - Accuracy:", nnet_accuracy, "\n")
 
 ###################### Comparison of the 3 models: #############################
 
-# Initialize a data frame to store the results (excluding KNN)
+# Initialize a data frame to store the results 
 model_comparison <- data.frame(
   Model = c("Logistic Regression", "GBM", "Neural Network"),
   Accuracy = numeric(3),
