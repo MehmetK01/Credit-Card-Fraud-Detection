@@ -1,0 +1,11 @@
+                Model       ROC Sensitivity
+1 Logistic Regression 0.9768059   0.9883814
+2                 GBM 0.9565165   0.9973152
+3      Neural Network 0.9495696   0.9755669
+Logistic Regression - Accuracy: 0.9881556 
+GBM Model - Accuracy: 0.9969921 
+Neural Network - Accuracy: 0.9753748 
+                Model  Accuracy Sensitivity Specificity
+1 Logistic Regression 0.9881556   0.9883814   0.8571429
+2                 GBM 0.9969921   0.9973152   0.8095238
+3      Neural Network 0.9753748   0.9755669   0.8639456
