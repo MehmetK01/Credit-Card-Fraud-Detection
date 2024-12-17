@@ -32,3 +32,13 @@ Accuracy: 0.999
 Sensitivity: 0.8095 
 Specificity: 0.9993 
 ROC AUC: 0.9558 
+
+
+
+XGB vs GBM:
+
+Conclusion: In the context of fraud detection, sensitivity (the ability to catch fraudulent cases) is typically the top priority, as missing fraud is far riskier than false positives.
+
+While XGBoost has higher accuracy and specificity, its sensitivity is much lower.
+GBM is the better model because it has exceptionally high sensitivity (0.9973) and a strong ROC AUC (0.982), ensuring that very few fraudulent cases are missed.
+Thus, GBM is the preferred model for this problem. If needed, you could further optimize XGBoost to improve its sensitivity.
