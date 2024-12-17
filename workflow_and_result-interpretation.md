@@ -8,7 +8,10 @@ Afterwards, in my analysis I apply Logistic Regression, GBM (Gradient Boosting M
 
 I have also applied some tunings to the customized loss function. 
 
-Best model interpretation:
+
+
+
+Best Model Interpretation:
 
 Accuracy
 The accuracy values for the three models are as follows:
