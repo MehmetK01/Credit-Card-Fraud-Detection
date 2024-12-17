@@ -1,0 +1,34 @@
+[1] "Confusion Matrix:"
+Confusion Matrix and Statistics
+
+          Reference
+Prediction     0     1
+         0 85233    28
+         1    61   119
+                                          
+               Accuracy : 0.999           
+                 95% CI : (0.9987, 0.9992)
+    No Information Rate : 0.9983          
+    P-Value [Acc > NIR] : 1.648e-07       
+                                          
+                  Kappa : 0.7273          
+                                          
+ Mcnemar's Test P-Value : 0.0006939       
+                                          
+            Sensitivity : 0.809524        
+            Specificity : 0.999285        
+         Pos Pred Value : 0.661111        
+         Neg Pred Value : 0.999672        
+             Prevalence : 0.001720        
+         Detection Rate : 0.001393        
+   Detection Prevalence : 0.002107        
+      Balanced Accuracy : 0.904404        
+                                          
+       'Positive' Class : 1               
+                                          
+
+XGBoost Model Results:
+Accuracy: 0.999 
+Sensitivity: 0.8095 
+Specificity: 0.9993 
+ROC AUC: 0.9558 
